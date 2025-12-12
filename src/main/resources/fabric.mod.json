@@ -22,13 +22,6 @@
 			"com.moddingminecraft.ModdingMinecraftClient"
 		]
 	},
-	"mixins": [
-		"moddingminecraft.mixins.json",
-		{
-			"config": "moddingminecraft.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
 		"fabricloader": ">=0.18.2",
 		"minecraft": "~1.21.11",

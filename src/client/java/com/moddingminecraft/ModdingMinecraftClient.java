@@ -10,14 +10,19 @@ public class ModdingMinecraftClient implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
-		LOGGER.info("🎨 MOD STUPIDA CARICATA! Solo lato client - niente server!");
-		LOGGER.info("🎭 OGGETTO STUPIDO ATTIVATO! La tua mod ModdingMinecraft è caricata!");
+		// CLIENT-SIDE: Rendering, suoni, interfaccia utente, grafica
+		LOGGER.info("🎨 CLIENT: ModdingMinecraft caricata lato CLIENT!");
+		LOGGER.info("🖼️ CLIENT: Qui gestiamo texture, suoni, menu, particelle!");
+		LOGGER.info("🎭 OGGETTO STUPIDO ATTIVATO! Rendering pronto!");
 		LOGGER.info("🤪 Preparati per l'oggetto più stupido di Minecraft!");
-		LOGGER.info("💡 Questo oggetto non fa niente... ma è STUPIDO!");
-		LOGGER.info("🎪 Benvenuto nel mondo delle mod stupide!");
+		LOGGER.info("🖼️ CLIENT: Texture stupida caricata con successo!");
+		LOGGER.info("📋 CLIENT: Modello stupido pronto per il rendering!");
 
-		// 🤪 Qui ci sarà il nostro oggetto stupido!
-		// Per ora è solo un commento, ma presto sarà realtà!
+		// Qui aggiungeremo:
+		// - ✅ Rendering personalizzato (texture già caricata!)
+		// - Suoni stupidi
+		// - Interfacce utente
+		// - Particelle colorate
+		// - Modelli 3D
 	}
 }

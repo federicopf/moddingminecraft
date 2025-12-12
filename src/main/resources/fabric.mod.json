@@ -1,31 +1,31 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "moddingminecraft",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "ModdingMinecraft",
+	"description": "La mia prima mod per Minecraft con Fabric!",
 	"authors": [
-		"Me!"
+		"ModdingMinecraft"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/moddingminecraft",
+		"sources": "https://github.com/moddingminecraft/moddingminecraft-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/moddingminecraft/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.moddingminecraft.ModdingMinecraft"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.moddingminecraft.ModdingMinecraftClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"moddingminecraft.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "moddingminecraft.client.mixins.json",
 			"environment": "client"
 		}
 	],

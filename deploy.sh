@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+echo "Stopping gradle daemon..."
+./gradlew --stop
+
+
 # cartella mods di Minecraft Windows (Fabric)
 WIN_MODS="/mnt/c/Users/Asus/AppData/Roaming/.minecraft/mods"
 

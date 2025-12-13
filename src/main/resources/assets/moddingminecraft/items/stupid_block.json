@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "model",
-    "model": "moddingminecraft:item/stupid_block"
+    "model": "moddingminecraft:block/stupid_block"
   }
 }

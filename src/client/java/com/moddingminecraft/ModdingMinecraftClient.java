@@ -13,14 +13,14 @@ public class ModdingMinecraftClient implements ClientModInitializer {
 		// CLIENT-SIDE: Rendering, suoni, interfaccia utente, grafica
 		LOGGER.info("🎨 CLIENT: ModdingMinecraft caricata lato CLIENT!");
 		LOGGER.info("🖼️ CLIENT: Qui gestiamo texture, suoni, menu, particelle!");
-		LOGGER.info("🎭 OGGETTO STUPIDO ATTIVATO! Rendering pronto!");
-		LOGGER.info("🤪 Preparati per l'oggetto più stupido di Minecraft!");
-		LOGGER.info("🖼️ CLIENT: Texture stupida caricata con successo!");
-		LOGGER.info("📋 CLIENT: Modello stupido pronto per il rendering!");
+		LOGGER.info("🎭 FERRO LEGGERO ATTIVATO! Rendering pronto!");
+		LOGGER.info("⚡ Preparati per il blocco più leggero di Minecraft!");
+		LOGGER.info("🖼️ CLIENT: Texture del ferro leggero caricata con successo!");
+		LOGGER.info("📋 CLIENT: Modello del ferro leggero pronto per il rendering!");
 
 		// Qui aggiungeremo:
 		// - ✅ Rendering personalizzato (texture già caricata!)
-		// - Suoni stupidi
+		// - Suoni metallici
 		// - Interfacce utente
 		// - Particelle colorate
 		// - Modelli 3D

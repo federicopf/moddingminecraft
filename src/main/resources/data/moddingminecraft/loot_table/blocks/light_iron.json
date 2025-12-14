@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "moddingminecraft:stupid_block"
+          "name": "moddingminecraft:light_iron"
         }
       ],
       "conditions": [

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "moddingminecraft:block/stupid_block"
+    "all": "moddingminecraft:block/light_iron"
   }
 }

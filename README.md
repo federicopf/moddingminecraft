@@ -6,7 +6,7 @@ For setup instructions please see the [fabric documentation page](https://docs.f
 
 ## Testing
 
-`/give @s moddingminecraft:stupid_block`
+`/give @s moddingminecraft:light_iron`
 
 ## License
 

@@ -1,0 +1,1 @@
+Questa è una texture placeholder. Sostituisci questo file con light_iron_ore.png

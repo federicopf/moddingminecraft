@@ -6,7 +6,7 @@ For setup instructions please see the [fabric documentation page](https://docs.f
 
 ## Testing
 
-`/give @s moddingminecraft:light_iron`
+`/give @s moddingminecraft:light_iron_ore`
 
 ## License
 

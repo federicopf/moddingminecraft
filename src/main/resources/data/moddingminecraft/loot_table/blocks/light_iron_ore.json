@@ -4,7 +4,7 @@
     {
       "rolls": 1,
       "entries": [
-        { "type": "minecraft:item", "name": "moddingminecraft:light_iron_ore" }
+        { "type": "minecraft:item", "name": "moddingminecraft:raw_light_iron" }
       ],
       "conditions": [
         { "condition": "minecraft:survives_explosion" }

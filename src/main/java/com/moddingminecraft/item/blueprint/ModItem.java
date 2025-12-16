@@ -1,15 +1,13 @@
 package com.moddingminecraft.item.blueprint;
 
+import com.moddingminecraft.ModdingMinecraft;
 import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
-import com.moddingminecraft.ModdingMinecraft;
 
-/**
- * Classe astratta base per tutti gli item del mod.
- * Fornisce metodi comuni per la registrazione e gestione delle proprietà.
- */
 public abstract class ModItem {
 
     protected final String name;
@@ -21,46 +19,18 @@ public abstract class ModItem {
         this.properties = properties;
     }
 
-    /**
-     * Restituisce il nome dell'item (usato per l'identifier).
-     */
-    public String getName() {
-        return name;
+    protected Item createItem() {
+        return new Item(properties);
     }
 
-    /**
-     * Restituisce le proprietà dell'item.
-     */
-    public Item.Properties getProperties() {
-        return properties;
-    }
-
-    /**
-     * Restituisce l'istanza dell'item dopo la registrazione.
-     */
-    public Item getItem() {
-        return item;
-    }
-
-    /**
-     * Imposta l'istanza dell'item (usato durante la registrazione).
-     */
-    public void setItem(Item item) {
-        this.item = item;
-    }
-
-    /**
-     * Prepara l'item per la registrazione.
-     * La registrazione vera e propria avverrà in ItemRegistry.registerAll().
-     */
     public void register() {
-        // L'item verrà creato e registrato in ItemRegistry.registerAll()
+        Identifier id = Identifier.fromNamespaceAndPath(ModdingMinecraft.MOD_ID, name);
+
+        ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, id);
+        properties.setId(key); // ✅ IMPORTANTISSIMO in 1.21.11
+
+        this.item = Registry.register(BuiltInRegistries.ITEM, id, createItem());
     }
 
-    /**
-     * Metodo chiamato dopo la registrazione per eventuali setup aggiuntivi.
-     */
-    public void onRegistered() {
-        // Implementazione di default vuota, può essere sovrascritta dalle sottoclassi
-    }
+    public void onRegistered() {}
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "moddingminecraft:block/light_iron_ore"
+  }
+}

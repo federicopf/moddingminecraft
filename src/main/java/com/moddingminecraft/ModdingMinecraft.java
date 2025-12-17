@@ -19,6 +19,7 @@ public class ModdingMinecraft implements ModInitializer {
     public void onInitialize() {
         ModBlocks.register();
         ItemRegistry.registerAll();
+        ModWorldGen.register();
         LOGGER.info("ModdingMinecraft loaded");
     }
 }

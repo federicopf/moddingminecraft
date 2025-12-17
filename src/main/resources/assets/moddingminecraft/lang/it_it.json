@@ -1,6 +1,7 @@
 {
   "block.moddingminecraft.light_iron_ore": "Minerale di Ferro Leggero",
   "item.moddingminecraft.light_iron_ore": "Minerale di Ferro Leggero",
+  "item.moddingminecraft.raw_light_iron": "Ferro Leggero Grezzo",
   "itemGroup.moddingminecraft": "ModdingMinecraft"
 }
 

@@ -1,5 +1,6 @@
 {
   "block.moddingminecraft.light_iron_ore": "Light Iron Ore",
   "item.moddingminecraft.light_iron_ore": "Light Iron Ore",
+  "item.moddingminecraft.raw_light_iron": "Raw Light Iron",
   "itemGroup.moddingminecraft": "ModdingMinecraft"
 }

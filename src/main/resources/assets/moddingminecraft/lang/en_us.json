@@ -2,5 +2,6 @@
   "block.moddingminecraft.light_iron_ore": "Light Iron Ore",
   "item.moddingminecraft.light_iron_ore": "Light Iron Ore",
   "item.moddingminecraft.raw_light_iron": "Raw Light Iron",
+  "item.moddingminecraft.light_iron_ingot": "Light Iron Ingot",
   "itemGroup.moddingminecraft": "ModdingMinecraft"
 }

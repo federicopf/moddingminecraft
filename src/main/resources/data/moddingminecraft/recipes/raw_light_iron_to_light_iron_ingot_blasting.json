@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:smelting",
+  "type": "minecraft:blasting",
   "category": "misc",
   "ingredient": {
     "item": "moddingminecraft:raw_light_iron"
@@ -9,6 +9,6 @@
     "count": 1
   },
   "experience": 0.7,
-  "cookingtime": 200
+  "cookingtime": 100
 }
 

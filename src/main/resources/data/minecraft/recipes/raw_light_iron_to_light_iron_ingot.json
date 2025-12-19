@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "moddingminecraft:raw_light_iron"
+  },
+  "result": "moddingminecraft:light_iron_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}

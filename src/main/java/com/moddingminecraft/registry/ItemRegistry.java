@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.moddingminecraft.item.blueprint.ModItem;
 import com.moddingminecraft.item.impl.RawLightIronItem;
+import com.moddingminecraft.item.impl.LightIronIngotItem;
 
 /**
  * Registro centralizzato per tutti gli item del mod.
@@ -15,6 +16,7 @@ public class ItemRegistry {
     private static final List<ModItem> ITEMS = new ArrayList<>();
 
     public static final RawLightIronItem RAW_LIGHT_IRON = register(new RawLightIronItem());
+    public static final LightIronIngotItem LIGHT_IRON_INGOT = register(new LightIronIngotItem());
 
     private static <T extends ModItem> T register(T item) {
         ITEMS.add(item);

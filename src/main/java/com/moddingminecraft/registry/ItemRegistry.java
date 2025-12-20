@@ -6,6 +6,10 @@ import java.util.List;
 import com.moddingminecraft.item.blueprint.ModItem;
 import com.moddingminecraft.item.impl.RawLightIronItem;
 import com.moddingminecraft.item.impl.LightIronIngotItem;
+import com.moddingminecraft.item.impl.LightIronHelmetItem;
+import com.moddingminecraft.item.impl.LightIronChestplateItem;
+import com.moddingminecraft.item.impl.LightIronLeggingsItem;
+import com.moddingminecraft.item.impl.LightIronBootsItem;
 
 /**
  * Registro centralizzato per tutti gli item del mod.
@@ -17,6 +21,12 @@ public class ItemRegistry {
 
     public static final RawLightIronItem RAW_LIGHT_IRON = register(new RawLightIronItem());
     public static final LightIronIngotItem LIGHT_IRON_INGOT = register(new LightIronIngotItem());
+
+    // Light Iron Armor Items
+    public static final LightIronHelmetItem LIGHT_IRON_HELMET = register(new LightIronHelmetItem());
+    public static final LightIronChestplateItem LIGHT_IRON_CHESTPLATE = register(new LightIronChestplateItem());
+    public static final LightIronLeggingsItem LIGHT_IRON_LEGGINGS = register(new LightIronLeggingsItem());
+    public static final LightIronBootsItem LIGHT_IRON_BOOTS = register(new LightIronBootsItem());
 
     private static <T extends ModItem> T register(T item) {
         ITEMS.add(item);

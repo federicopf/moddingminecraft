@@ -1,0 +1,18 @@
+TODO LIST - ARMOR SET IMPLEMENTATION
+====================================
+
+[] Creare ModArmorItem.java (classe base per armor items)
+[] Creare LightIronArmorMaterial.java (materiale armatura)
+[] Creare LightIronHelmetItem.java (elmetto)
+[] Creare LightIronChestplateItem.java (corazza)
+[] Creare LightIronLeggingsItem.java (gambali)
+[] Creare LightIronBootsItem.java (stivali)
+[] Registrare tutti gli armor items nel ItemRegistry.java
+[] Creare texture PNG per ciascun pezzo armatura:
+   - light_iron_helmet.png
+   - light_iron_chestplate.png
+   - light_iron_leggings.png
+   - light_iron_boots.png
+[] Creare crafting recipes per ciascun pezzo (usando light iron ingot)
+[] Implementare effetto speciale quando set completo indossato
+[] Aggiungere traduzioni nei file di lingua

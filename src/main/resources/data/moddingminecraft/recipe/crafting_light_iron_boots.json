@@ -2,10 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "X X",
-    "X X"
+    "X X",
+    "   "
   ],
   "key": {
-    "X": { "item": "moddingminecraft:light_iron_ingot" }
+    "X": "moddingminecraft:light_iron_ingot"
   },
   "result": {
     "id": "moddingminecraft:light_iron_boots",

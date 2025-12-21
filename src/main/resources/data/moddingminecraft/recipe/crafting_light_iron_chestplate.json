@@ -6,9 +6,7 @@
     "XXX"
   ],
   "key": {
-    "X": {
-      "item": "moddingminecraft:light_iron_ingot"
-    }
+    "X": "moddingminecraft:light_iron_ingot"
   },
   "result": {
     "id": "moddingminecraft:light_iron_chestplate",

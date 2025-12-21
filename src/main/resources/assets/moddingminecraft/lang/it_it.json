@@ -3,6 +3,10 @@
   "item.moddingminecraft.light_iron_ore": "Minerale di Ferro Leggero",
   "item.moddingminecraft.raw_light_iron": "Ferro Leggero Grezzo",
   "item.moddingminecraft.light_iron_ingot": "Lingotto di Ferro Leggero",
+  "item.moddingminecraft.light_iron_helmet": "Elmetto di Ferro Leggero",
+  "item.moddingminecraft.light_iron_chestplate": "Corazza di Ferro Leggero",
+  "item.moddingminecraft.light_iron_leggings": "Gambali di Ferro Leggero",
+  "item.moddingminecraft.light_iron_boots": "Stivali di Ferro Leggero",
   "itemGroup.moddingminecraft": "ModdingMinecraft"
 }
 

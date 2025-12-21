@@ -5,12 +5,10 @@
     "X X"
   ],
   "key": {
-    "X": {
-      "item": "moddingminecraft:light_iron_ingot"
-    }
+    "X": { "item": "moddingminecraft:light_iron_ingot" }
   },
   "result": {
-    "item": "moddingminecraft:light_iron_boots",
+    "id": "moddingminecraft:light_iron_boots",
     "count": 1
   }
 }

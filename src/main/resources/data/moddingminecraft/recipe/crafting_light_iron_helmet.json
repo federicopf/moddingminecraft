@@ -2,15 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "XXX",
-    "X X"
+    "X X",
+    "   "
   ],
   "key": {
-    "X": {
-      "item": "moddingminecraft:light_iron_ingot"
-    }
+    "X": { "item": "moddingminecraft:light_iron_ingot" }
   },
   "result": {
-    "item": "moddingminecraft:light_iron_helmet",
+    "id": "moddingminecraft:light_iron_helmet",
     "count": 1
   }
 }

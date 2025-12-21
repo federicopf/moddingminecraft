@@ -3,5 +3,9 @@
   "item.moddingminecraft.light_iron_ore": "Light Iron Ore",
   "item.moddingminecraft.raw_light_iron": "Raw Light Iron",
   "item.moddingminecraft.light_iron_ingot": "Light Iron Ingot",
+  "item.moddingminecraft.light_iron_helmet": "Light Iron Helmet",
+  "item.moddingminecraft.light_iron_chestplate": "Light Iron Chestplate",
+  "item.moddingminecraft.light_iron_leggings": "Light Iron Leggings",
+  "item.moddingminecraft.light_iron_boots": "Light Iron Boots",
   "itemGroup.moddingminecraft": "ModdingMinecraft"
 }

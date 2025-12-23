@@ -2,19 +2,27 @@ TODO LIST - ARMOR SET IMPLEMENTATION
 ====================================
 
 [x] Creare ModArmorItem.java (classe base per armor items)
-[] Creare LightIronArmorMaterial.java (materiale armatura - da fare quando si rende indossabile)
+[x] Creare ModArmorMaterials.java (materiale armatura - COMPLETATO per 1.21.11)
 [x] Creare LightIronHelmetItem.java (elmetto)
 [x] Creare LightIronChestplateItem.java (corazza)
 [x] Creare LightIronLeggingsItem.java (gambali)
 [x] Creare LightIronBootsItem.java (stivali)
 [x] Registrare tutti gli armor items nel ItemRegistry.java
-[x] Creare texture PNG per ciascun pezzo armatura:
-   - light_iron_helmet.png
-   - light_iron_chestplate.png
-   - light_iron_leggings.png
-   - light_iron_boots.png
+[x] Item icons (icone inventario) - OK
+[!] CREARE texture ARMOR indossata (64x32px) partendo da vanilla iron:
+   - Copiare assets/minecraft/textures/entity/equipment/humanoid/iron.png
+   - Modificare colori: grigio ferro → argento chiaro
+   - Salvare come: textures/entity/equipment/humanoid/light_iron.png
+   
+   - Copiare assets/minecraft/textures/entity/equipment/humanoid_leggings/iron.png  
+   - Modificare colori: grigio ferro → argento chiaro
+   - Salvare come: textures/entity/equipment/humanoid_leggings/light_iron.png
 [x] Creare crafting recipes per ciascun pezzo (usando light iron ingot)
 [] Creare creative tab per la mod
-[] Modificare ModArmorItem per estendere ArmorItem (rendere indossabile)
+[x] Modificare ModArmorItem per usare Item.Properties.humanoidArmor() (1.21 style)
+[x] Creare equipment asset JSON (assets/moddingminecraft/equipment/light_iron.json)
+[x] Copiare texture in nuova posizione 1.21:
+   - textures/entity/equipment/humanoid/light_iron.png
+   - textures/entity/equipment/humanoid_leggings/light_iron.png
 [] Implementare effetto speciale quando set completo indossato
 [x] Aggiungere traduzioni nei file di lingua

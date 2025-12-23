@@ -33,4 +33,12 @@ public abstract class ModItem {
     }
 
     public void onRegistered() {}
+
+    public Item getItem() {
+        return item;
+    }
+
+    public String getName() {
+        return name;
+    }
 }

@@ -1,0 +1,15 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "moddingminecraft:light_iron"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "moddingminecraft:light_iron"
+      }
+    ]
+  }
+}
+

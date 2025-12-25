@@ -1,75 +1,68 @@
 TODO LIST - MODDINGMINECRAFT
 ===============================
+Stato: ~95% Completato - Mancano solo 2 task finali
 
-ARMOR SET LIGHT IRON:
-====================
-[x] Creare ModArmorItem.java (classe base per armor items)
-[x] Creare ModArmorMaterials.java (materiale armatura - COMPLETATO per 1.21.11)
-[x] Creare LightIronHelmetItem.java (elmetto)
-[x] Creare LightIronChestplateItem.java (corazza)
-[x] Creare LightIronLeggingsItem.java (gambali)
-[x] Creare LightIronBootsItem.java (stivali)
-[x] Registrare tutti gli armor items nel ItemRegistry.java
-[x] Item icons (icone inventario) - OK
-[!] CREARE texture ARMOR indossata (64x32px) partendo da vanilla iron:
-   - Copiare assets/minecraft/textures/entity/equipment/humanoid/iron.png
-   - Modificare colori: grigio ferro → argento chiaro
-   - Salvare come: textures/entity/equipment/humanoid/light_iron.png
+╔══════════════════════════════════════════════════════════════╗
+║                      TASK RIMANENTI                         ║
+╠══════════════════════════════════════════════════════════════╣
+║  🔨 CREATIVE TAB                                            ║
+║     [] Creare creative tab per organizzare gli item della mod║
+║                                                              ║
+║  ⚡ EFFETTO SPEED SET COMPLETO                               ║
+║     [] Implementare effetto SPEED quando tutti e 4 i pezzi  ║
+║        sono indossati                                        ║
+║     [] Controllare inventory del player ogni tick            ║
+║     [] Applicare/rimuovere effect quando necessario          ║
+╚══════════════════════════════════════════════════════════════╝
 
-   - Copiare assets/minecraft/textures/entity/equipment/humanoid_leggings/iron.png
-   - Modificare colori: grigio ferro → argento chiaro
-   - Salvare come: textures/entity/equipment/humanoid_leggings/light_iron.png
-[x] Creare crafting recipes per ciascun pezzo (usando light iron ingot)
-[] Creare creative tab per la mod
-[x] Modificare ModArmorItem per usare Item.Properties.humanoidArmor() (1.21 style)
-[x] Creare equipment asset JSON (assets/moddingminecraft/equipment/light_iron.json)
-[x] Copiare texture in nuova posizione 1.21
-[] Implementare effetto speciale quando set completo indossato
-   - Effetto SPEED quando tutti e 4 i pezzi sono indossati
-   - Controllare inventory del player ogni tick
-   - Applicare/rimuovere effect quando necessario
-[x] Aggiungere traduzioni nei file di lingua
+═══════════════════════════════════════════════════════════════
+✅ ARMOR SET LIGHT IRON - COMPLETATO
+═══════════════════════════════════════════════════════════════
+[x] ModArmorItem.java (classe base)
+[x] ModArmorMaterials.java (1.21.11 ready)
+[x] Tutti e 4 gli armor items (helmet, chestplate, leggings, boots)
+[x] Registrazione nel ItemRegistry
+[x] Item icons (icone inventario)
+[x] Texture armor indossata (64x32px) - COMPLETATA ✓
+[x] Crafting recipes per ogni pezzo
+[x] ModArmorItem aggiornato per 1.21 style
+[x] Equipment asset JSON
+[x] Texture copiate in posizione 1.21
+[x] Traduzioni aggiunte
 
-RAW LIGHT IRON:
-==============
-[x] Creare RawLightIronItem.java
-[x] Registrare RawLightIronItem nel ItemRegistry
-[x] Creare texture raw_light_iron.png (16x16px)
+═══════════════════════════════════════════════════════════════
+✅ MATERIALI E ITEMS - COMPLETATI
+═══════════════════════════════════════════════════════════════
+[x] RawLightIronItem + registrazione + texture
+[x] LightIronIngotItem + registrazione + texture
 
-LIGHT IRON INGOT:
-================
-[x] Creare LightIronIngotItem.java
-[x] Registrare LightIronIngotItem nel ItemRegistry
-[x] Creare texture light_iron_ingot.png (16x16px)
+═══════════════════════════════════════════════════════════════
+✅ BLOCCO E WORLD GEN - COMPLETATI
+═══════════════════════════════════════════════════════════════
+[x] LightIronOreBlock + registrazione
+[x] Texture blocco (16x16px)
+[x] Model JSON e loot table
+[x] World generation (ConfiguredFeature, PlacedFeature)
+[x] ModWorldGen.java creato
+[x] ModBlocks.java wrapper
+[x] Datapack biome_modifier.json
 
-LIGHT IRON ORE:
-==============
-[x] Creare LightIronOreBlock.java
-[x] Registrare blocco nel BlockRegistry
-[x] Creare texture blocco (16x16px)
-[x] Creare model JSON blocco
-[x] Creare loot table blocco
-[x] Registrare world generation (ConfiguredFeature, PlacedFeature)
+═══════════════════════════════════════════════════════════════
+✅ CRAFTING & TRADUZIONI - COMPLETATI
+═══════════════════════════════════════════════════════════════
+[x] Recipe JSON per ogni pezzo armatura
+[x] Smelting recipe raw → ingot
+[x] File lingua en_us.json e it_it.json
 
-WORLD GENERATION:
-================
-[x] Creare ModWorldGen.java con world generation per Light Iron Ore
-
-BLOCKS GENERAL:
-==============
-[x] Creare ModBlocks.java come wrapper per BlockRegistry
-
-CRAFTING RECIPES:
-================
-[x] Creare recipe JSON per ogni pezzo armatura
-[x] Creare smelting recipe per raw light iron → light iron ingot
-
-TRADUZIONI:
-==========
-[x] Creare file lang/en_us.json con tutte le traduzioni
-[x] Creare file lang/it_it.json con traduzioni italiane
-
-DATAPACK:
-========
-[x] Creare worldgen/biome_modifier.json per modificare distribuzione minerali
+═══════════════════════════════════════════════════════════════
+🔧 CODE REFACTORING & CLEANUP
+═══════════════════════════════════════════════════════════════
+[] Verificare e migliorare JavaDoc su tutte le classi
+[] Rimuovere eventuali import non utilizzati
+[] Controllare naming conventions (costanti, metodi, variabili)
+[] Ottimizzare prestazioni nei controlli inventory (se necessario)
+[] Aggiungere commenti esplicativi per logica complessa
+[] Verificare che tutte le classi seguano gli standard Minecraft Forge
+[] Testare edge cases negli effetti armor
+[] Validare che non ci siano memory leaks negli event handlers
 

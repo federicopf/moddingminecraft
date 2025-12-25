@@ -1,14 +1,10 @@
 package com.moddingminecraft;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.event.registry.FabricRegistryBuilder;
-import net.fabricmc.fabric.api.event.registry.RegistryAttribute;
-import net.minecraft.core.Registry;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.moddingminecraft.registry.ItemRegistry;
+import com.moddingminecraft.ModCreativeTabs;
 
 public class ModdingMinecraft implements ModInitializer {
 
@@ -20,6 +16,8 @@ public class ModdingMinecraft implements ModInitializer {
         ModBlocks.register();
         ItemRegistry.registerAll();
         ModWorldGen.register();
+        // Registra la creative tab DOPO gli item per assicurarsi che gli armor siano disponibili
+        ModCreativeTabs.register();
         LOGGER.info("ModdingMinecraft loaded");
     }
 }

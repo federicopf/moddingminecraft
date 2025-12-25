@@ -7,5 +7,6 @@
   "item.moddingminecraft.light_iron_chestplate": "Light Iron Chestplate",
   "item.moddingminecraft.light_iron_leggings": "Light Iron Leggings",
   "item.moddingminecraft.light_iron_boots": "Light Iron Boots",
-  "itemGroup.moddingminecraft": "ModdingMinecraft"
+  "itemGroup.moddingminecraft": "ModdingMinecraft",
+  "itemGroup.moddingminecraft.light_iron": "Light Iron"
 }

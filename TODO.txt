@@ -1,12 +1,15 @@
 TODO LIST - MODDINGMINECRAFT
 ===============================
-Stato: ~95% Completato - Mancano solo 2 task finali
+Stato: ~97% Completato - Mancano solo 2 task finali (Speed effect + Code Refactor)
 
 ╔══════════════════════════════════════════════════════════════╗
 ║                      TASK RIMANENTI                         ║
 ╠══════════════════════════════════════════════════════════════╣
-║  🔨 CREATIVE TAB                                            ║
-║     [] Creare creative tab per organizzare gli item della mod║
+║  ✅ CREATIVE TAB - COMPLETATO                               ║
+║     [x] Creare ModCreativeTabs.java                          ║
+║     [x] Registrare nel ModdingMinecraft.java                 ║
+║     [x] Aggiungere traduzioni nei file lingua                ║
+║     [x] Correggere errori compilazione (getItem(), Identifier)║
 ║                                                              ║
 ║  ⚡ EFFETTO SPEED SET COMPLETO                               ║
 ║     [] Implementare effetto SPEED quando tutti e 4 i pezzi  ║

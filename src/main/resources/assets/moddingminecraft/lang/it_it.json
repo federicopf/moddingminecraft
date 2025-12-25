@@ -7,7 +7,8 @@
   "item.moddingminecraft.light_iron_chestplate": "Corazza di Ferro Leggero",
   "item.moddingminecraft.light_iron_leggings": "Gambali di Ferro Leggero",
   "item.moddingminecraft.light_iron_boots": "Stivali di Ferro Leggero",
-  "itemGroup.moddingminecraft": "ModdingMinecraft"
+  "itemGroup.moddingminecraft": "ModdingMinecraft",
+  "itemGroup.moddingminecraft.light_iron": "Ferro Leggero"
 }
 
 

@@ -20,14 +20,11 @@ public final class ModCreativeTabs {
             .title(Component.translatable("itemGroup.moddingminecraft.light_iron"))
             .icon(() -> new ItemStack(ItemRegistry.LIGHT_IRON_INGOT.getItem()))
             .displayItems((params, output) -> {
-                // Block
                 output.accept(BlockRegistry.LIGHT_IRON_ORE.getBlock().asItem());
-                
-                // Materials
+
                 output.accept(ItemRegistry.RAW_LIGHT_IRON.getItem());
                 output.accept(ItemRegistry.LIGHT_IRON_INGOT.getItem());
-                
-                // Armor
+
                 output.accept(ItemRegistry.LIGHT_IRON_HELMET.getItem());
                 output.accept(ItemRegistry.LIGHT_IRON_CHESTPLATE.getItem());
                 output.accept(ItemRegistry.LIGHT_IRON_LEGGINGS.getItem());

@@ -1,6 +1,5 @@
 package com.moddingminecraft.effect;
 
-import com.moddingminecraft.ModdingMinecraft;
 import com.moddingminecraft.registry.ItemRegistry;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.server.MinecraftServer;
@@ -8,7 +7,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.item.ItemStack;
 
 /**
  * Gestisce gli effetti speciali quando si indossa l'armatura Light Iron.
@@ -47,8 +45,7 @@ public final class ArmorEffects {
 
     private static void applySpeedEffect(ServerPlayer player) {
         MobEffectInstance current = player.getEffect(MobEffects.SPEED);
-        
-        // Apply or renew effect if not present or about to expire
+
         if (current == null || current.getDuration() < 200) {
             player.addEffect(new MobEffectInstance(
                 MobEffects.SPEED,

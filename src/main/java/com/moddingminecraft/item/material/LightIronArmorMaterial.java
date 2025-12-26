@@ -51,7 +51,7 @@ public final class LightIronArmorMaterial {
     }
 
     public static void initialize() {
-        // Forces class loading - material is already defined as static final
+        // Forces class loading
     }
 }
 

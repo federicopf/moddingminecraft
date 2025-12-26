@@ -17,7 +17,6 @@ public final class ItemRegistry {
     private static final List<ModItem> ITEMS = new ArrayList<>();
     private static final List<ModArmorItem> ARMOR_ITEMS = new ArrayList<>();
 
-    // Materials
     public static final ModItem RAW_LIGHT_IRON = register(new ModItem("raw_light_iron", new Item.Properties()));
     public static final ModItem LIGHT_IRON_INGOT = register(new ModItem("light_iron_ingot", new Item.Properties()));
 
@@ -48,7 +47,7 @@ public final class ItemRegistry {
         // Initialize armor material (requires LIGHT_IRON_INGOT to be registered)
         LightIronArmorMaterial.initialize();
 
-        // Create and register armor items
+        LIGHT_IRON_HELMET = registerArmor(new ModArmorItem("light_iron_helmet", LightIronArmorMaterial.MATERIAL, ArmorType.HELMET));
         LIGHT_IRON_HELMET = registerArmor(new ModArmorItem("light_iron_helmet", LightIronArmorMaterial.MATERIAL, ArmorType.HELMET));
         LIGHT_IRON_CHESTPLATE = registerArmor(new ModArmorItem("light_iron_chestplate", LightIronArmorMaterial.MATERIAL, ArmorType.CHESTPLATE));
         LIGHT_IRON_LEGGINGS = registerArmor(new ModArmorItem("light_iron_leggings", LightIronArmorMaterial.MATERIAL, ArmorType.LEGGINGS));

@@ -3,9 +3,7 @@ package com.moddingminecraft.block.impl;
 import com.moddingminecraft.block.blueprint.OreBlock;
 
 /**
- * Blocco specifico per il minerale di ferro leggero.
- * Estende OreBlock con le proprietà specifiche del light iron ore.
- * Questo commento forza il refresh dell'IDE.
+ * Minerale di Light Iron.
  */
 public class LightIronOreBlock extends OreBlock {
 

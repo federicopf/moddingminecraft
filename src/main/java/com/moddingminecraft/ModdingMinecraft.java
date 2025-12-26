@@ -3,9 +3,12 @@ package com.moddingminecraft;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.moddingminecraft.init.ModCreativeTabs;
+import com.moddingminecraft.effect.ArmorEffects;
+import com.moddingminecraft.registry.BlockRegistry;
 import com.moddingminecraft.registry.ItemRegistry;
-import com.moddingminecraft.ModCreativeTabs;
-import com.moddingminecraft.ModArmorEffects;
+import com.moddingminecraft.world.WorldGeneration;
 
 public class ModdingMinecraft implements ModInitializer {
 
@@ -14,13 +17,12 @@ public class ModdingMinecraft implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        ModBlocks.register();
+        BlockRegistry.registerAll();
         ItemRegistry.registerAll();
-        ModWorldGen.register();
-        // Registra la creative tab DOPO gli item per assicurarsi che gli armor siano disponibili
+        WorldGeneration.register();
         ModCreativeTabs.register();
-        // Inizializza il sistema degli effetti armor
-        ModArmorEffects.initialize();
-        LOGGER.info("ModdingMinecraft loaded");
+        ArmorEffects.initialize();
+        
+        LOGGER.info("ModdingMinecraft initialized successfully");
     }
 }

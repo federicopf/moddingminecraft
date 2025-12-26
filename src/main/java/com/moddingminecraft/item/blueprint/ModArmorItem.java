@@ -11,15 +11,14 @@ import net.minecraft.world.item.equipment.ArmorMaterial;
 import net.minecraft.world.item.equipment.ArmorType;
 
 /**
- * Classe base per gli item dell'armatura del mod.
- * Usa il nuovo sistema 1.21 con Item.Properties.humanoidArmor().
+ * Rappresenta un item di armatura del mod con registrazione automatica.
  */
-public abstract class ModArmorItem {
+public class ModArmorItem {
 
-    protected final String name;
-    protected final ArmorMaterial material;
-    protected final ArmorType armorType;
-    protected Item item;
+    private final String name;
+    private final ArmorMaterial material;
+    private final ArmorType armorType;
+    private Item item;
 
     public ModArmorItem(String name, ArmorMaterial material, ArmorType armorType) {
         this.name = name;
@@ -27,25 +26,16 @@ public abstract class ModArmorItem {
         this.armorType = armorType;
     }
 
-    protected Item createItem() {
-        Item.Properties properties = new Item.Properties()
-                .humanoidArmor(material, armorType);
-        return new Item(properties);
-    }
-
     public void register() {
         Identifier id = Identifier.fromNamespaceAndPath(ModdingMinecraft.MOD_ID, name);
-
         ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, id);
         
         Item.Properties properties = new Item.Properties()
-                .setId(key)
-                .humanoidArmor(material, armorType);
+            .setId(key)
+            .humanoidArmor(material, armorType);
 
         this.item = Registry.register(BuiltInRegistries.ITEM, id, new Item(properties));
     }
-
-    public void onRegistered() {}
 
     public Item getItem() {
         return item;

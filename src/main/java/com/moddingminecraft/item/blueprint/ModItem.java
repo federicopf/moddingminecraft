@@ -8,7 +8,10 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
 
-public abstract class ModItem {
+/**
+ * Rappresenta un item del mod con registrazione automatica.
+ */
+public class ModItem {
 
     protected final String name;
     protected final Item.Properties properties;
@@ -19,20 +22,12 @@ public abstract class ModItem {
         this.properties = properties;
     }
 
-    protected Item createItem() {
-        return new Item(properties);
-    }
-
     public void register() {
         Identifier id = Identifier.fromNamespaceAndPath(ModdingMinecraft.MOD_ID, name);
-
         ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, id);
-        properties.setId(key); // ✅ IMPORTANTISSIMO in 1.21.11
-
-        this.item = Registry.register(BuiltInRegistries.ITEM, id, createItem());
+        properties.setId(key);
+        this.item = Registry.register(BuiltInRegistries.ITEM, id, new Item(properties));
     }
-
-    public void onRegistered() {}
 
     public Item getItem() {
         return item;

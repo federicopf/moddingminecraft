@@ -1,6 +1,6 @@
 TODO LIST - MODDINGMINECRAFT
 ===============================
-Stato: ~97% Completato - Mancano solo 2 task finali (Speed effect + Code Refactor)
+Stato: ~99% Completato - Manca solo il Code Refactoring finale!
 
 ╔══════════════════════════════════════════════════════════════╗
 ║                      TASK RIMANENTI                         ║
@@ -11,11 +11,12 @@ Stato: ~97% Completato - Mancano solo 2 task finali (Speed effect + Code Refacto
 ║     [x] Aggiungere traduzioni nei file lingua                ║
 ║     [x] Correggere errori compilazione (getItem(), Identifier)║
 ║                                                              ║
-║  ⚡ EFFETTO SPEED SET COMPLETO                               ║
-║     [] Implementare effetto SPEED quando tutti e 4 i pezzi  ║
-║        sono indossati                                        ║
-║     [] Controllare inventory del player ogni tick            ║
-║     [] Applicare/rimuovere effect quando necessario          ║
+║  ✅ EFFETTO SPEED SET COMPLETO - COMPLETATO                ║
+║     [x] Creare ModArmorEffects.java                          ║
+║     [x] Implementare controllo set completo ogni secondo     ║
+║     [x] Applicare effetto SPEED (+20% velocità)             ║
+║     [x] Rimuovere effetto quando set non completo            ║
+║     [x] Registrare event handler nel ModdingMinecraft.java   ║
 ╚══════════════════════════════════════════════════════════════╝
 
 ═══════════════════════════════════════════════════════════════
